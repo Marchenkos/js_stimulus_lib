@@ -1,6 +1,6 @@
 {
   "name": "js-stimulus-lib",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A set of Stimulus components",
   "source": "src/index.js",
   "exports": "./dist/index.modern.js",
