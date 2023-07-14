@@ -1,0 +1,26 @@
+{
+  "name": "js-stimulus-lib",
+  "version": "1.0.0",
+  "description": "A set of Stimulus components",
+  "source": "src/index.js",
+  "exports": "./dist/index.modern.js",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.module.js",
+  "unpkg": "./dist/index.umd.js",
+  "typings": "./index.d.ts",
+  "private": false,
+  "scripts": {
+    "build": "microbundle --globals @hotwired/stimulus=Stimulus",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "microbundle": "^0.15.0"
+  },
+  "dependencies": {
+    "@hotwired/stimulus": ">=3.0.0",
+    "@rails/request.js": "^0.0.8"
+  },
+  "peerDependencies": {
+    "@hotwired/stimulus": ">=3.0.0"
+  }
+}
