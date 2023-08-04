@@ -9,8 +9,6 @@ export default class extends Controller {
       const recordsTotal = Number(recordsTotalElement.innerText)
       recordsTotalElement.innerText = recordsTotal.toLocaleString()
     }
-
-
     
   }
 }
