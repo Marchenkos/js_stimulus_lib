@@ -7,3 +7,5 @@ export { default as SmartTableFilterBy } from './smart_table/filter_by_controlle
 export { default as SmartTableGroupable } from './smart_table/groupable_controller'
 export { default as SmartTablePagy } from './smart_table/pagy_controller'
 export { default as SmartTableSortBy } from './smart_table/sort_by_controller'
+
+
