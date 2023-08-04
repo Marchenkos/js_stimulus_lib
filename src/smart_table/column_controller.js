@@ -8,6 +8,7 @@ export default class extends Controller {
     if (event instanceof KeyboardEvent) {
       if (event.key !== "Enter") return
     }
+    
 
     const form = (event.target instanceof HTMLFormElement) ? event.target : event.target.closest("form")
     await form.requestSubmit()
