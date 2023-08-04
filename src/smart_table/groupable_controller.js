@@ -3,19 +3,22 @@ import { Controller } from '@hotwired/stimulus'
 export default class extends Controller {
   static targets = [ "row" ]
   
-  connect() {}
+  connect() {
+    console.log("hello2")
+  }
 
   toggle(event) {
-    const buttonNode = event.currentTarget
-    const rowNodes = this.rowTargets.filter(row => this.element.contains(row))
+    const buttonNode = event.currentTarget;
     const colllapsedClassname = 'sr-only'
 
-    if (buttonNode.getAttribute('aria-expanded') == 'true') {
-      buttonNode.setAttribute('aria-expanded', 'false')
-      rowNodes.forEach((rowNode) => rowNode.classList.add(colllapsedClassname))
+    if (buttonNode.getAttribute('data-expanded') == 'true') {
+      buttonNode.setAttribute('data-expanded', false);
+
+      this.rowTargets.forEach((rowNode) => rowNode.classList.add(colllapsedClassname))
     } else {
-      buttonNode.setAttribute('aria-expanded', 'true')
-      rowNodes.forEach((rowNode) => rowNode.classList.remove(colllapsedClassname))
+      buttonNode.setAttribute('data-expanded', true);
+
+      this.rowTargets.forEach((rowNode) => rowNode.classList.remove(colllapsedClassname))
     }
   }
 }

@@ -1,7 +1,6 @@
 export { default as SmartTableCheckboxSet } from './smart_table/checkbox_set_controller'
 export { default as SmartTableClearable } from './smart_table/clearable_controller'
 export { default as SmartTableColumn } from './smart_table/column_controller'
-export { default as SmartTableDetailsPopover } from './smart_table/details_popover_controller'
 export { default as SmartTableDetailsSet } from './smart_table/details_set_controller'
 export { default as SmartTableElement } from './smart_table/element_controller'
 export { default as SmartTableFilterBy } from './smart_table/filter_by_controller'
