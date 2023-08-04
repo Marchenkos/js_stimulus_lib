@@ -17,6 +17,7 @@
     "@semantic-release/commit-analyzer": "^10.0.1",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/release-notes-generator": "^11.0.4",
+    "conventional-changelog-eslint": "^4.0.0",
     "microbundle": "^0.15.0",
     "semantic-release": "^21.0.7"
   },
