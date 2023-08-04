@@ -9,7 +9,6 @@ export default class extends Controller {
 
       this.childTargets.forEach((details) => {
         if (details == event.currentTarget) return
-
         details.removeAttribute('open')
       })
     }))
