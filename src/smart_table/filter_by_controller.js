@@ -18,6 +18,7 @@ export default class extends Controller {
     const regexp = new RegExp('new_' + type, 'g')
     const newContent = content.replace(regexp, newId)
     
+    
     button.insertAdjacentHTML('beforebegin', newContent)
   }
   
