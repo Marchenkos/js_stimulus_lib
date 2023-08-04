@@ -1,6 +1,6 @@
 {
   "name": "js-stimulus-lib",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A set of Stimulus components",
   "source": "src/index.js",
   "exports": "./dist/index.modern.js",
@@ -14,7 +14,8 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "microbundle": "^0.15.0"
+    "microbundle": "^0.15.0",
+    "semantic-release": "^21.0.7"
   },
   "dependencies": {
     "@hotwired/stimulus": ">=3.0.0",
